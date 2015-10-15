@@ -33,6 +33,12 @@ module.exports = function(grunt) {
             ]
         },
 
+        webdriver: {
+            test: {
+                configFile: './tests/wdio.conf.js'
+            }
+        },
+
         assemble: {
             site: {
                 options: {
