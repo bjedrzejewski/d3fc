@@ -48,26 +48,25 @@ exports.config = {
     //
     capabilities: [
         {
+            browserName: 'firefox',
+            'browserstack.local': true
+        },
+        {
             browserName: 'chrome',
             'browserstack.local': true
         },
-        //{
-        //    browserName: 'chrome',
-        //    'browserstack.local': true
-        //},
-        //{
-        //    browserName: 'internet explorer',
-        //    'browserstack.local': true
-        //},
-        //{
-        //    browserName: 'safari',
-        //    'browserstack.local': true
-        //},
-        //{
-        //    browserName: 'iPad',
-        //    'browserstack.local': true
-        //}
-
+        {
+            browserName: 'internet explorer',
+            'browserstack.local': true
+        },
+        {
+            browserName: 'safari',
+            'browserstack.local': true
+        },
+        {
+            browserName: 'iPad',
+            'browserstack.local': true
+        }
     ],
     //
     // ===================
@@ -89,7 +88,7 @@ exports.config = {
     baseUrl: 'http://localhost:8000',
     //
     // Default timeout for all waitForXXX commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 100000,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as property. Make sure you have
@@ -130,7 +129,7 @@ exports.config = {
     jasmineNodeOpts: {
         //
         // Jasmine default timeout
-        defaultTimeoutInterval: 10000,
+        defaultTimeoutInterval: 100000,
         //
         // The Jasmine framework allows it to intercept each assertion in order to log the state of the application
         // or website depending on the result. For example it is pretty handy to take a screenshot everytime
