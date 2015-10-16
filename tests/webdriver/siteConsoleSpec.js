@@ -1,4 +1,4 @@
-describe('d3fc main page render test', function() {
+describe('Visit all pages, check for no console errors', function() {
 
     //it('should have the right title - the good old callback way', function(done) {
     //
@@ -12,12 +12,22 @@ describe('d3fc main page render test', function() {
     //
     //});
 
-    it('should have the right title - the promise way', function() {
+    it('iterate through the documentation', function() {
 
         return browser
-            .url('/')
+            .url('/components/introduction/1-getting-started.html')
             .getTitle().then(function(title) {
-                expect(title).toBe('d3fc');
+                expect(title).toBe('Getting Started');
+            });
+
+    });
+
+    it('iterate through the examples', function() {
+
+        return browser
+            .url('/examples/')
+            .getTitle().then(function(title) {
+                expect(title).toBe('Examples');
             });
 
     });

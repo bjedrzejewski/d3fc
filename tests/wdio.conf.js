@@ -8,8 +8,8 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user: 'username', //Username from https://www.browserstack.com/accounts/automate
-    key: 'key', //Access Key from https://www.browserstack.com/accounts/automate
+    user: 'x', //Username from https://www.browserstack.com/accounts/automate
+    key: 'x', //Access Key from https://www.browserstack.com/accounts/automate
 
     //
     // If you are using Sauce Labs, WebdriverIO takes care to update the job information
@@ -46,9 +46,29 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
-        browserName: 'firefox'
-    }],
+    capabilities: [
+        {
+            browserName: 'chrome',
+            'browserstack.local': true
+        },
+        //{
+        //    browserName: 'chrome',
+        //    'browserstack.local': true
+        //},
+        //{
+        //    browserName: 'internet explorer',
+        //    'browserstack.local': true
+        //},
+        //{
+        //    browserName: 'safari',
+        //    'browserstack.local': true
+        //},
+        //{
+        //    browserName: 'iPad',
+        //    'browserstack.local': true
+        //}
+
+    ],
     //
     // ===================
     // Test Configurations
@@ -66,7 +86,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", the base url gets prepended.
-    baseUrl: 'http://d3fc.io',
+    baseUrl: 'http://localhost:8000',
     //
     // Default timeout for all waitForXXX commands.
     waitforTimeout: 10000,
