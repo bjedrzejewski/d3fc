@@ -27,7 +27,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './tests/webdriver/*Spec.js'
+        './tests/webdriver/*SpecWeb.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -64,7 +64,7 @@ exports.config = {
             'browserstack.local': true
         },
         {
-            browserName: 'iPad',
+            browserName: 'iPhone',
             'browserstack.local': true
         }
     ],
