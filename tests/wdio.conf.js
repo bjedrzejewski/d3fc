@@ -48,23 +48,7 @@ exports.config = {
     //
     capabilities: [
         {
-            browserName: 'firefox',
-            'browserstack.local': true
-        },
-        {
             browserName: 'chrome',
-            'browserstack.local': true
-        },
-        {
-            browserName: 'internet explorer',
-            'browserstack.local': true
-        },
-        {
-            browserName: 'safari',
-            'browserstack.local': true
-        },
-        {
-            browserName: 'iPhone',
             'browserstack.local': true
         }
     ],
