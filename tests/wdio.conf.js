@@ -8,8 +8,8 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user: 'x', //Username from https://www.browserstack.com/accounts/automate
-    key: 'x', //Access Key from https://www.browserstack.com/accounts/automate
+    user: process.env.BROWSERSTACK_USER, //Username from https://www.browserstack.com/accounts/automate
+    key: process.env.BROWSERSTACK_KEY, //Access Key from https://www.browserstack.com/accounts/automate
 
     //
     // If you are using Sauce Labs, WebdriverIO takes care to update the job information
